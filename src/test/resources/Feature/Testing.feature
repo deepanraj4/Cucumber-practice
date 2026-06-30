@@ -1,8 +1,15 @@
-Feature: To Verify Adactin Hotel Webpage
+@Loginpage
+Feature: To Verify Hotelbooker Login Webpage
 
-Scenario: To verify Adactin Hotel Login Webpage
-Given user should be in adactin login page 
-When user should enter the username and password 
-Then user have to click login button
-And user should verify login successfull message
- 	
+  Background:
+    Given open the browser and launch the application
+
+  Scenario Outline: To verify Hotelbooker Login Webpage
+    Given user should be in adactin login page
+    When user should enter the "<Username>" and "<Password>"
+    Then user clicks the login button
+    And user should verify login successful message
+
+    Examples:
+      | Username          | Password     |
+      | deepanraj@test   | Deepan@1234  |

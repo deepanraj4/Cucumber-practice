@@ -3,9 +3,8 @@
   <groupId>org.basebdd</groupId>
   <artifactId>CucumberPractice</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
-  
-  <dependencies>
+    <packaging>pom</packaging>
+       <dependencies>
     
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>

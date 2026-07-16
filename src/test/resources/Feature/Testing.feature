@@ -10,6 +10,8 @@ Feature: To Verify Hotelbooker Login Webpage
     Then user clicks the login button
     And user should verify login successful message
 
+    Then user should select the client "<ClientName>" and verify the client name
+
     Examples:
-      | Username          | Password     |
-      | deepanraj@test   | Deepan@1234  |
+      | Username          | Password     | ClientName   |
+      | deepanraj@test   | Deepan@1234  | Demo Client Sabre   |

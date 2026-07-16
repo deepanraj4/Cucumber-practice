@@ -7,6 +7,7 @@ import org.base.BaseClass;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
 
 public class LoginPageSteps extends BaseClass {
 	// don't instantiate page object before driver is initialized
@@ -50,5 +51,12 @@ public class LoginPageSteps extends BaseClass {
 	@And("user should verify login successful message")
 	public void userShouldVerifyLoginSuccessfulMessage() {
 		System.out.println("Login successful");
+	}
+
+
+	@Then("user should select the client {string} and verify the client name")
+	public void userSelectClient(String clientName) {
+		loginPage.Select_Client(clientName);
+		System.out.println("Client selected and verified successfully");
 	}
 }

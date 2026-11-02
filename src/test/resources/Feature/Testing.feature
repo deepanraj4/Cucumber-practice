@@ -4,6 +4,9 @@ Feature: To Verify Hotelbooker Login Webpage
   Background:
     Given open the browser and launch the application
 
+    """
+    <EmailAddress>Test@123</EmailAddress>
+    """
   Scenario Outline: To verify Hotelbooker Login Webpage
     Given user should be in adactin login page
     When user should enter the "<Username>" and "<Password>"
@@ -14,4 +17,4 @@ Feature: To Verify Hotelbooker Login Webpage
 
     Examples:
       | Username          | Password     | ClientName   |
-      | deepanraj@test   | Deepan@1234  | Demo Client Sabre   |
+      | deepanraj@test   | Deepan@123 | Demo Client Sabre   |

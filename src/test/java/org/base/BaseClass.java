@@ -7,6 +7,7 @@ import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.checkerframework.checker.nullness.qual.NonNull;
 
 import org.apache.commons.io.FileUtils;
@@ -33,12 +34,11 @@ public class BaseClass {
 
 		switch (browserType) {
 		case "Chrome":
-			System.setProperty("webdriver.Chrome.driver","C:\\Users\\Deepanraj\\eclipse-workspace\\FrameworkAdactin\\driver\\chromedriver.exe");
-			
+			//.setProperty("webdriver.Chrome.driver","C:\\Users\\Deepanraj\\eclipse-workspace\\FrameworkAdactin\\driver\\chromedriver.exe");
+			//WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 
 			break;
-
 		default:
 			System.out.println("InValid Browser Type");
 			break;

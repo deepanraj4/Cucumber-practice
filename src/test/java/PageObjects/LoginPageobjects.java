@@ -6,6 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class LoginPageobjects extends BaseClass {
 
     public LoginPageobjects(WebDriver driver) {
@@ -31,7 +34,6 @@ public class LoginPageobjects extends BaseClass {
     public WebElement LOGIN_BUTTON;
 
 
-
    public void Select_Client(String ClientName) {
         try {
             WebElement clientElement = driver.findElement(By.xpath("//div[@id='clientList']//h2[normalize-space()='" + ClientName + "']"));
@@ -46,7 +48,7 @@ public class LoginPageobjects extends BaseClass {
         }
 
 
-   }
+      }
 }
 
 
